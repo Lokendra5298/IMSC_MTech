@@ -1,0 +1,35 @@
+// Hash maps in rust
+
+use std::collections::HashMap;
+
+fn main() {
+    let mut marks = HashMap::new();
+    println!("Initial Length is: {}", marks.len());
+
+    // Add values
+    marks.insert("Physics", 95);
+    marks.insert("Chemistry", 81);
+    marks.insert("Maths", 90);
+    marks.insert("Hindi", 94);
+    marks.insert("English", 84);
+
+    // Length of HashMap
+    println!("After insert, length is: {}", marks.len());
+
+    // Get single value
+    match marks.get("Physics") {
+        Some(marks) => println!("{}", marks),
+        None => println!("Not able to find"),
+    }
+    
+    // Remove element
+    marks.remove("English");
+    
+    // Iteration of HashMap
+    for (sub, mark) in & marks{
+        println!("Sub = {}, marks = {}", sub, mark)
+    }
+    
+    // cheak element
+    println!("Does this element present? {}",marks.contains_key("Hindi"));
+}

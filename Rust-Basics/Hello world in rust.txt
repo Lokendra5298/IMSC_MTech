@@ -1,0 +1,12 @@
+fn main() {
+    let x: i32 = 2;
+    let y: f32 = 3.0;
+    let p: bool = false;
+    let z: &str = "Lokendra";
+
+    println!("x: {}", x);
+    println!("y: {}", y);
+    println!("p: {}", p);
+    println!("z: {}", z);
+    println!("Hello, world!");
+}

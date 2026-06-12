@@ -1,0 +1,48 @@
+//Conditional statements in Rust 
+
+fn main() {
+    let number = 7;
+
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
+    main1();
+    main2();
+    main3();
+}
+
+fn main1() {
+    let number = 6;
+
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+}
+
+fn main2() {
+    let number = 3;
+
+    match number {
+        1 => println!("One!"),
+        2 => println!("Two!"),
+        3 => println!("Three!"),
+        _ => println!("Something else!"),  // The underscore `_` is a catch-all pattern
+    }
+}
+
+//////////// Dynamically assign /////
+
+fn main3() {
+    let condition = false;  
+    let num = if condition { 5 } else { 6 };
+
+    println!("The value of num is: {}", num);
+}

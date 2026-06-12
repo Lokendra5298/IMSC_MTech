@@ -1,0 +1,28 @@
+fn main() {
+    // Statement: Variable declaration 
+    let x = 5; 
+
+    // Expression used as a statement
+    println!("Value of x: {}", x); // The 'println!' macro is an expression, and with the semicolon, it becomes a statement.
+
+    // Expression with a block evaluating to a value
+    let y = {
+        let inner = x * 2;  // Statement: Variable declaration
+        inner + 1           // Expression: Evaluates to 'inner + 1' (which is 11 here)
+    }; // The block itself is an expression
+
+    // Using if expression to assign a value
+    let z = if y > 10 { 100 } else { 200 };
+
+    // Output results
+    println!("Computed y: {}", y); // Print statements
+    println!("Value of z based on y: {}", z); // Another print statement
+
+    // Function call as an expression used as a statement
+    display(z); // The function call 'display(z)' is an expression, and its use here is as a statement.
+}
+
+// Simple function to display a value
+fn display(value: i32) {
+    println!("Displaying: {}", value);
+}

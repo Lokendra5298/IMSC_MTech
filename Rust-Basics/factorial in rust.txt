@@ -1,0 +1,26 @@
+fn main() {
+    let n1 = 10;
+    let n2 = 20;
+    let result = add(n1, n2);  
+    println!("The sum of {} and {} is {}", n1, n2, result);
+           /////////// Factorial //////////////////
+    let a = 5;
+    println!("The factorial of {} is {}", a, factorial(a));
+}
+
+fn add(a: i32, b: i32) -> i32 {
+    a + b  
+}
+
+// Defines a function `factorial` 
+fn factorial(n: i32) -> i64 {
+    if n == 0 {
+        return 1;  // Early return
+    }
+    let mut result = 1;
+
+    for i in 1..=n as i64 {
+        result *= i;
+    }
+    result  // Implicit return
+}

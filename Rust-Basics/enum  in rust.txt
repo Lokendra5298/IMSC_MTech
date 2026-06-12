@@ -1,0 +1,31 @@
+// enum 
+/*
+fn main() {
+    let num = 1..10;
+    for i in num {
+        println!("Number is: {}", i);
+    }
+}
+*/
+
+
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+}
+
+fn main() {
+    // Create a variable `player_direction`
+    let player_direction = Direction::Left;
+
+    match player_direction {
+        Direction::Up => println!("Moving up!"),
+        Direction::Down => println!("Moving down!"),
+        Direction::Left => println!("Moving left!"),
+        Direction::Right => println!("Moving right!"),
+    }
+}
+
+

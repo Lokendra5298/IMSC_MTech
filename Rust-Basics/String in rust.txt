@@ -1,0 +1,38 @@
+// String in rust
+
+fn main() {
+    let mut str1 = String::from("Hii, I am Lokendra Kumar");
+
+    // Length of the string
+    println!("Length: {}", str1.len());
+
+    // Check if the string is empty
+    println!("Is empty: {}", str1.is_empty());
+
+    // Split the string by whitespace and print each part
+    println!(" ");
+    for part in str1.split_whitespace() {
+        println!("{}", part);
+    }
+
+    // Make the string empty
+    str1.clear();
+    println!("String after clearing: '{}'", str1);
+
+    // Check if the string contains a character (example: 'a')
+    println!("Contains 'a': {}", str1.contains('a'));
+
+    // Add some content back to the string for further operations
+    str1 = String::from("Hello, world!");
+
+    // Delete an element (character) from the string (removing first occurrence of 'o')
+    let index = str1.find('o');
+    if let Some(i) = index {
+        str1.remove(i);
+    }
+    println!("String after removing first 'o': '{}'", str1);
+
+    // Make the string mutable and change its content
+    str1.push_str(" Welcome to Rust.");
+    println!("Final string: '{}'", str1);
+}

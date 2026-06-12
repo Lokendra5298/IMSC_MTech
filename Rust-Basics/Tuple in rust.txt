@@ -1,0 +1,10 @@
+fn main() {
+    let tup: (i32, f64, u8) = (12, 0.9, 32);
+    println!("The entire tuple is: {:?}", tup);
+    println!("Print  one by one element\n");
+
+    let tup: (i32, f64, u8) = (12, 0.9, 32);
+    println!("First element: {}", tup.0);
+    println!("Second element: {}", tup.1);
+    println!("Third element: {}", tup.2);
+}

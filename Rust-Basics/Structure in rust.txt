@@ -1,0 +1,27 @@
+// Structure in rust
+
+struct Person {
+    name: String,
+    age: u32,
+}
+
+fn main() {
+    // Create a struct
+    let person1 = Person {
+        name: String::from("Lokendra"),
+        age: 30,
+    };
+    println!("Name: {}", person1.name);
+    println!("Age: {}", person1.age);
+    
+    // Mutable struct
+    
+    let mut person2 = Person {
+        name: String::from("Pravesh"),
+        age: 18,
+    };
+    person2.age = 20; // Corrected assignment here
+    
+    println!("Name: {}", person2.name);
+    println!("Age: {}", person2.age);
+}

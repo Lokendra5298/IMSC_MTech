@@ -1,0 +1,19 @@
+// Modules in rust
+
+mod module1{
+// if pub is not written then fun is private
+    fn test(){
+        println!("Private function");
+    }
+    pub fn printfn(){
+        println!("Hello Lokendra");
+        test();
+    }
+    pub fn nested(){
+        println!("Nested Module");
+    }
+}
+fn main() {
+    module1::nested();
+    module1::printfn();
+}

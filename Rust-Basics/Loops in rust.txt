@@ -1,0 +1,51 @@
+// Loops in rust
+
+// for loop
+fn main() {
+    for num in 1..=5 {
+        println!("Number is: {}", num);
+    }
+    println!("\n");
+    main1();
+    print!("\n");
+    main2();
+    print!("\n");
+    main3();
+}
+
+// while loop
+
+fn main1() {
+    let mut count = 0;
+
+    while count < 5 {
+        println!("Count is: {}", count);
+        count += 1;
+    }
+}
+
+// Iteration over iterator
+fn main2() {
+    let fruits = vec!["Apple", "Banana", "Orange"];
+
+    for fruit in fruits.iter() {
+        println!("Fruit: {}", fruit);
+    }
+}
+
+// loop and break 
+
+fn main3() {
+    let mut count = 0; // Makes the variable mutable
+
+    loop {
+        println!("Count is: {}", count);
+        count += 1;
+
+        if count == 5 {
+            break; 
+        }
+    }
+}
+
+

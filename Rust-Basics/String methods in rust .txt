@@ -1,0 +1,35 @@
+// String methods in rust 
+
+fn main() {
+    let str1 = String::from("Hii, i am Lokendra kumar");
+
+    // Replace part of the string
+    let replaced_str = str1.replace("Lokendra kumar", "Rust Programmer");
+    println!("Replaced String: {}", replaced_str);
+
+    // Iterate over lines (splitting by newline character)
+    let multiline_str = String::from("Hii,\nI am Lokendra Kumar\nWelcome to Rust");
+    println!("{}",multiline_str);
+    // following is also same
+    println!("Lines in the string:");
+    for line in multiline_str.lines() {
+        println!("{}", line);
+    }
+
+    // Split the str
+    println!("Splitting the string by whitespace:");
+    for part in str1.split_whitespace() {
+        println!("{}", part);
+    }
+
+    // Trim whitespace from both ends of the string
+    let str_with_whitespace = String::from("   Hello, Rust!   ");
+    let trimmed_str = str_with_whitespace.trim();
+    println!("Trimmed String: '{}'", trimmed_str);
+
+    // Iterate over each character in the string
+    println!("Characters in the string:");
+    for c in str1.chars() {
+        println!("{}", c);
+    }
+}

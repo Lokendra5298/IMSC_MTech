@@ -1,0 +1,19 @@
+// Comments in rust
+//! This module contains utilities for performing arithmetic operations
+
+/// Adds two numbers and returns the result.
+///
+/// # Examples
+///
+/// ```
+/// let result = my_crate::add(2, 3);
+/// assert_eq!(result, 5);
+/// ```
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+fn main() {
+    let result = add(5, 6);
+    println!("The result of adding is: {}", result);
+}

@@ -1,0 +1,15 @@
+// Shadowing in Rust
+
+fn main() {
+    let mut x = 10; // initial value 10
+// If we use let inside the block value of x will not be change
+
+    {
+        x = 20; // Reassign the value of `x` = 20 
+        println!("{}", x); 
+        x = 30;
+        println!("{}", x);
+    }
+
+    println!("{}", x);
+}

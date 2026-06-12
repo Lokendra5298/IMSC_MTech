@@ -1,0 +1,29 @@
+fn main() {
+    print!("Sum of two elements is: ");
+    sum();
+    sub();
+    print_single_int(56);
+    print_int_with_str(56, "Lokendra");
+}
+
+fn sum() {
+    let a: i32 = 28;
+    let b: i32 = 20;
+    println!("{}", a + b);
+}
+
+fn sub() {
+    let a: i32 = 28;
+    let b: i32 = 20;
+    println!("Subtraction of {} and {} is: {}", a, b, a - b);
+}
+
+// Function with a single argument
+fn print_single_int(value: i32) {
+    println!("{}", value);
+}
+
+// Function with two arguments
+fn print_int_with_str(value: i32, str: &str) {
+    println!("{}, {}", value, str);
+}

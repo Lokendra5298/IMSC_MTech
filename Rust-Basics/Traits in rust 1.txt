@@ -1,0 +1,30 @@
+// Traits in rust 1
+
+struct Person {
+    name: String,
+    age: u8,
+}
+
+trait HasVoice {
+    fn speak(&self);
+    fn can_speak(&self) -> bool;
+}
+
+impl HasVoice for Person {
+    fn speak(&self) {
+        println!("Hello, my name is {}", self.name);
+    }
+
+    fn can_speak(&self) -> bool {
+        self.age > 0
+    }
+}
+
+fn main() {
+    let per = Person {
+        name: String::from("Lokendra"),
+        age: 20,
+    };
+    println!("Can {} speak? {}", per.name, per.can_speak());
+    per.speak();
+}

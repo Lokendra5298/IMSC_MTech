@@ -1,0 +1,46 @@
+// Traits methods in rust 
+
+trait Describe {
+    fn describe(&self) -> String;
+}
+
+struct Dog {
+    name: String,
+    age: u8,
+}
+
+// Implement the Describe trait for Dog
+impl Describe for Dog {
+    fn describe(&self) -> String {
+        format!("Dog named {} who is {} years old", self.name, self.age)
+    }
+}
+
+// Define a struct Cat
+struct Cat {
+    name: String,
+    color: String,
+}
+
+// Implement the Describe trait for Cat
+impl Describe for Cat {
+    fn describe(&self) -> String {
+        format!("Cat named {} who is {} in color", self.name, self.color)
+    }
+}
+
+fn main() {
+    let dog = Dog {
+        name: String::from("Buddy"),
+        age: 3,
+    };
+
+    let cat = Cat {
+        name: String::from("Whiskers"),
+        color: String::from("white"),
+    };
+
+    // Call the describe method on both instances
+    println!("{}", dog.describe());
+    println!("{}", cat.describe());
+}

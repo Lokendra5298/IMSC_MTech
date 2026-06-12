@@ -1,0 +1,31 @@
+// Enum function in rust
+
+#[allow(dead_code)]
+enum Day {
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+}
+
+impl Day {
+    fn is_weekend(&self) -> bool {
+        match self {
+            Day::Saturday | Day::Sunday => true,
+            _ => false,
+        }
+    }
+}
+
+fn main() {
+    let today = Day::Saturday;
+    let tomorrow = Day::Sunday;
+    let weekday = Day::Wednesday;
+
+    println!("Is today a weekend? {}", today.is_weekend());
+    println!("Is tomorrow a weekend? {}", tomorrow.is_weekend());
+    println!("Is a weekday a weekend? {}", weekday.is_weekend());
+}

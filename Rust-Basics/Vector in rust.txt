@@ -1,0 +1,8 @@
+fn main() {
+    let vec = vec![1, 2, 3, 4, 5];
+    print!("Vector elements: ");
+    for element in &vec {
+        print!("{} ", element);
+    }
+    println!(); // To add a newline at the end
+}

@@ -1,0 +1,18 @@
+// Reference and borrowing in rust 
+
+fn main() {
+    let mut value = 5;
+
+    // Define a reference 
+    let reference = &value;
+
+    println!("Value through immutable reference: {}", reference);
+    
+    // mutable reference
+    let mut mut_reference = &mut value;
+
+    // Increment the value through the mutable reference
+    *mut_reference += 1;
+
+    println!("Value through mutable reference: {}", mut_reference);
+}

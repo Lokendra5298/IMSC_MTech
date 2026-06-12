@@ -1,0 +1,18 @@
+// constants and code block in rust
+const MAX_POINTS: u32 = 10;
+
+fn main() {
+    for i in 1..MAX_POINTS{
+        println!("The numbers are: {}", i);
+    }
+    main1();
+}
+
+fn main1(){
+    let x = 10;
+    {
+        let y = 20;
+        println!("{},{}",x,y)
+    }
+    // we can not use y hare(outside the block)
+}

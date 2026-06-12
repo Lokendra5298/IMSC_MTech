@@ -1,0 +1,19 @@
+// Vecors in rust 
+// Arrays have a fixed size known at compile time.
+// Vectors are dynamic and can grow or shrink in size at runtime.
+
+
+fn main() {
+    let mut vec1 = vec![5, 6, 8, 9];
+    println!("{}", vec1[0]);
+    
+    vec1.push(15);
+    println!("Vector after pushing the element at index 1: {:?}", vec1);
+    // for &i in &vec1 {
+    //     println!("{}", i);
+    // }
+
+    vec1.remove(1);
+    println!("Vector after removing the element at index 1: {:?}", vec1);
+}
+

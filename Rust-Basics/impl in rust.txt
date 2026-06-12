@@ -1,0 +1,24 @@
+// impl in rust
+// In Rust, the impl keyword is used to define implementations for types
+
+struct Rectangle {
+    width: u8,
+    height: u8,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        (self.width as u32) * (self.height as u32)
+    }
+}
+
+fn main() {
+    // Creating an instance of Rectangle
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    // Printing the area
+    println!("The area of rect1 is: {} square pixels.", rect1.area());
+}

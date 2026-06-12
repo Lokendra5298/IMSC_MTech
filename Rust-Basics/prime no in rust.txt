@@ -1,0 +1,25 @@
+// prime no in rust
+
+#[allow(dead_code)]
+
+fn main(){
+    let num = 31;
+    if prime(num){
+        println!("{} is prime number",num);
+    }
+    else{
+        println!("{} is not prime number",num);
+    }
+}
+
+fn prime(t: u32) -> bool {
+    if t <= 1 {
+        return false;
+    }
+    for i in 2..=((t as f64).sqrt() as u32) {
+        if t % i == 0 {
+            return false;
+        }
+    }
+    true
+}
