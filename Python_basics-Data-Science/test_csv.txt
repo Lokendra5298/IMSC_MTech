@@ -1,0 +1,4 @@
+databases
+Lokendra, Mathematics, MA23M008
+Hrithik, Electrical, EE23M010
+Teja, Electrical, EE23M015

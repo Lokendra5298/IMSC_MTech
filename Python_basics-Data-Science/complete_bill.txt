@@ -1,0 +1,10 @@
+Customer name: Lokendra
+Table number: 16
+Order details:
+- Item1: 1
+- Item2: 3
+- Item3: 1
+Bill amount: 0
+Tax charge: 0.0
+Service charge: 0.0
+Grand total: 0.0

@@ -1,0 +1,37 @@
+qid,qname,question,force_resp,type,selector
+QID281,LearnCodeOnline,What online resources do you use to learn to code? Select all that apply.,FALSE,MC,MAVR
+QID306,LearnCodeCoursesCert,What online courses or certifications do you use to learn to code? Select all that apply.,FALSE,MC,MAVR
+QID32,YearsCode,"Including any education, how many years have you been coding in total?",FALSE,MC,DL
+QID34,YearsCodePro,"NOT including education, how many years have you coded professionally (as a part of your work)?",FALSE,MC,DL
+QID31,DevType,"Which of the following describes your current job, the one you do most of the time? Please select only one.",FALSE,MC,SAVR
+QID29,OrgSize,"Approximately how many people are employed by the company or organization you currently work for?  This should only include your primary company, and not the entire holding or parent company if that applies.",FALSE,MC,SAVR
+QID278,PurchaseInfluence,"What level of influence do you, personally, have over new technology purchases at your organization?",FALSE,MC,SAVR
+QID322,TechList,"When thinking about new technology purchases at your organization, are you more likely to be given a short list of products/services to evaluate or be told to investigate on your own?",FALSE,MC,SAVR
+QID279,BuyNewTool,"When buying a new tool or software, how do you discover and research available solutions? Select all that apply.",FALSE,MC,MAVR
+QID6,Country,"Where do you live? <span style=""font-weight: bolder;"">*</span>",TRUE,MC,DL
+QID50,Currency,"Which currency do you use day-to-day? If your answer is complicated, please pick the one you're most comfortable estimating in. *",TRUE,MC,DL
+QID51,CompTotal,"What is your current total <b>annual</b> compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation.  If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty.",FALSE,TE,SL
+QID61,S3,"<span style=""font-size:22px; font-family: arial,helvetica,sans-serif; font-weight: 700;"">Tech and tech culture</span><br>
+<br>
+
+<p><span style=""font-size:16px; font-family:arial,helvetica,sans-serif;"">The next set of questions will focus on technology and tech culture.<br>
+<br>
+Most questions in this section are optional. Required questions are noted with *.</span></p>",FALSE,DB,TB
+QID233,Language,"Which <b>programming, scripting, and markup languages</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the language and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID262,Database,"Which <b>database environments </b>have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the database and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID263,Platform,"Which <b>cloud platforms</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the platform and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID264,Webframe,"Which <b>web frameworks and web technologies</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the framework and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID265,MiscTech,"Which <b>other frameworks and libraries</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the framework and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID275,ToolsTech,"Which <b>developer </b><strong>tools for compiling, building and testing</strong> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the technology and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID274,NEWCollabTools,"Which <strong>development environments</strong> did you use regularly over the past year, and which do you want to work with over the next year? Please check all that apply.",FALSE,Matrix,Likert
+QID71,OpSys,What is the primary <b>operating system</b> in which you work? ,FALSE,Matrix,Likert
+QID282,OfficeStackAsync,"Which <b>collaborative work management and/or code documentation tools</b> did you use regularly over the past year, and which do you want to work with over the next year? Select all that apply",FALSE,Matrix,Likert
+QID307,OfficeStackSync,"Which <b>communication tools</b> did you use regularly over the past year, and which do you want to work with over the next year? Select all that apply",FALSE,Matrix,Likert
+QID327,AISearch,"Which <b>AI-powered search tools</b> did you use regularly over the past year, and which do you want to work with over the next year? Select all that apply.",FALSE,Matrix,Likert
+QID328,AIDev,"Which <b>AI-powered developer tools</b> did you use regularly over the past year, and which do you want to work with over the next year? Select all that apply",FALSE,Matrix,Likert
+QID91,S4,"<span style=""font-size:22px; font-family: arial,helvetica,sans-serif; font-weight: 700;"">Stack Overflow - usage and community</span><br>
+<br>
+
+<p><span style=""font-size:16px; font-family:arial,helvetica,sans-serif;"">This section will focus on Stack Overflow usage and community questions.<br>
+<br>
+Most questions in this section are optional. Required questions are noted with *.</span></p>",FALSE,DB,TB
